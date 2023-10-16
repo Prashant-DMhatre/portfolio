@@ -136,7 +136,7 @@ const Portfolio = () => {
           <Card bordered={false} style={{boxShadow:'none'}}>
             <Row>
               <Col className='text-[40px] font-bold'>
-                Prashant Dilip Mhatre
+                PRASHANT DILIP MHATRE
               </Col>
             </Row>
             <Row className='font-bold text-headingColorSmall'>
