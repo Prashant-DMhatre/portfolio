@@ -3,10 +3,10 @@ import { Row, Col, List, Divider } from 'antd';
 import calender from '../images/calendar.png'
 import location from '../images/pin.png'
 
-const Experiance = (data) => {
+const Experiance = ({data}) => {
   return ( 
     <>
-    {data.data.map((key, index) =>
+    {data.map((key, index) =>
       <>
         <List
           size="small"

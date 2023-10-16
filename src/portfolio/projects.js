@@ -1,10 +1,10 @@
 //use server
 import { Row, Col, List, Divider } from 'antd';
 
-const Experiance = (data) => {
+const Experiance = ({data}) => {
   return ( 
     <>
-    {data.data.map((key, index) =>
+    {data.map((key, index) =>
       <>
         <List
           size="small"

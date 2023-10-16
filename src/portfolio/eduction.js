@@ -3,7 +3,6 @@ import calender from '../images/calendar.png'
 import location from '../images/pin.png'
 
 const Education = ({data}) => {
-    console.log("data",data)
   return ( 
     <>
     {data.map((key, index) =>
