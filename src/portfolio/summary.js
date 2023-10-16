@@ -7,7 +7,7 @@ const Summary = ({data}) => {
       <List
         size="small"
         dataSource={data}
-        renderItem={(item) => <List.Item className='text-start'>{item}</List.Item>
+        renderItem={(item) => <List.Item className='text-start'><Typography.Text mark>&#x2022;</Typography.Text> {item}</List.Item>
       }/>
     </>
   )

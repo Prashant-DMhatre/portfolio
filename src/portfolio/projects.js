@@ -18,7 +18,7 @@ const Experiance = ({data}) => {
           </>
           }
           dataSource={key.technology_used}
-          renderItem={(item) => <List.Item className='text-start text-textColor'>{item}</List.Item>
+          renderItem={(item) => <List.Item className='text-start text-textColor'><Typography.Text mark>&#x2022;</Typography.Text>{item}</List.Item>
         }/>
         <Divider type="horizontal" className='m-0' dashed={true} /> 
       </>
