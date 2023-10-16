@@ -132,8 +132,8 @@ const Portfolio = () => {
   return ( 
     <>
       <Card className='m-auto bg-slate-300 w-[70%]'>
-        <Space direction="vertical" className='w-[100%]'>
-          <Card bordered={false} >
+        {/* <Space direction="vertical" className='w-[100%]'> */}
+          <Card bordered={false} style={{boxShadow:'none'}}>
             <Row>
               <Col className='text-[40px] font-bold'>
                 Prashant Dilip Mhatre
@@ -173,42 +173,30 @@ const Portfolio = () => {
               </Col>
             </Row>
           </Card>
-        </Space>
+        {/* </Space> */}
 
         <div className='grid grid-cols-5 gap-10'>
           <div className='col-span-3'>
-            <Space>
-              <Card bordered={false} title={<div className='text-headerColor text-[30px] text-start'>EXPERIENCE</div>}>
-                <Experiance data={experianceData}/>
-              </Card>
-            </Space>
-            <Space>
-              <Card bordered={false} title={<div className='text-headerColor text-[30px] text-start'>PROJECTS</div>}>
-                <Projects data={projectsData}/>
-              </Card>
-            </Space>
+            <Card bordered={false} style={{boxShadow:'none'}} title={<div className='text-headerColor text-[30px] text-start'>EXPERIENCE</div>}>
+              <Experiance data={experianceData}/>
+            </Card>
+            <Card bordered={false} style={{boxShadow:'none'}} title={<div className='text-headerColor text-[30px] text-start'>PROJECTS</div>}>
+              <Projects data={projectsData}/>
+            </Card>
           </div>
           <div className='col-span-2 text-left'>
-            <Space>
-              <Card bordered={false} title={<div className='text-headerColor text-[30px] text-start'>SUMMARY</div>}>
-                <Summary data={summaryData}/>
-              </Card>
-            </Space>
-            <Space>
-              <Card bordered={false} title={<div className='text-headerColor text-[30px] text-start'>STRENGTHS</div>}>
-                <Capsules data={strengthData}/>
-              </Card>
-            </Space>
-            <Space>
-              <Card bordered={false} title={<div className='text-headerColor text-[30px] text-start'>SKILLS</div>}>
-                <Skills data={skillsData}/>
-              </Card>
-            </Space>
-            <Space>
-              <Card bordered={false} title={<div className='text-headerColor text-[30px] text-start'>EDUCATION</div>}>
-                <Education data={educationData}/>
-              </Card>
-            </Space>
+            <Card bordered={false} style={{boxShadow:'none'}} title={<div className='text-headerColor text-[30px] text-start'>SUMMARY</div>}>
+              <Summary data={summaryData}/>
+            </Card>
+            <Card bordered={false} style={{boxShadow:'none'}} title={<div className='text-headerColor text-[30px] text-start'>STRENGTHS</div>}>
+              <Capsules data={strengthData}/>
+            </Card>
+            <Card bordered={false} style={{boxShadow:'none'}} title={<div className='text-headerColor text-[30px] text-start'>SKILLS</div>}>
+              <Skills data={skillsData}/>
+            </Card>
+            <Card bordered={false} style={{boxShadow:'none'}} title={<div className='text-headerColor text-[30px] text-start'>EDUCATION</div>}>
+              <Education data={educationData}/>
+            </Card>
           </div> 
         </div>
       </Card>
