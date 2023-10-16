@@ -1,5 +1,5 @@
 //use server
-import { Row, Col, List, Divider } from 'antd';
+import { Row, Col, List, Divider, Typography } from 'antd';
 
 const Experiance = ({data}) => {
   return ( 
@@ -18,10 +18,13 @@ const Experiance = ({data}) => {
           </>
           }
           dataSource={key.technology_used}
-          renderItem={(item) => <List.Item className='text-start text-textColor'><Typography.Text mark>&#x2022;</Typography.Text>{item}</List.Item>
+          bordered={false}
+          renderItem={(item) => <List.Item className='text-start text-textColor' style={{paddingLeft:'0px'}}><Typography.Text>&#x2022; </Typography.Text>{item}</List.Item>
         }/>
-        <Divider type="horizontal" className='m-0' dashed={true} /> 
-      </>
+        {data && (data.length) - 1 === index ? "" :  
+          <Divider type="horizontal" className='m-0' dashed={true} />
+        }
+        </>
       )
     }
     </>

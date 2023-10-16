@@ -1,4 +1,4 @@
-import { Row, Col  } from 'antd';
+import { Row, Col, Divider } from 'antd';
 import calender from '../images/calendar.png'
 import location from '../images/pin.png'
 
@@ -22,6 +22,9 @@ const Education = ({data}) => {
           <img src={location} className='w-[15px] h-[15px] mr-1'/><div className='text-[15px]'>{key.address}</div>
         </Col>
       </Row>
+      {data && (data.length) - 1 === index ? "" :  
+        <Divider type="horizontal" className='m-0' dashed={true} />
+      }    
       </>
       ) 
     }

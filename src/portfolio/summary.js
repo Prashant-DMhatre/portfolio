@@ -1,5 +1,5 @@
 //use server
-import { List } from 'antd';
+import { List, Typography } from 'antd';
 
 const Summary = ({data}) => {
   return ( 
@@ -7,7 +7,7 @@ const Summary = ({data}) => {
       <List
         size="small"
         dataSource={data}
-        renderItem={(item) => <List.Item className='text-start'><Typography.Text mark>&#x2022;</Typography.Text> {item}</List.Item>
+        renderItem={(item) => <List.Item className='text-start' style={{paddingLeft:'0px'}}><Typography.Text>&#x2022; </Typography.Text> {item}</List.Item>
       }/>
     </>
   )

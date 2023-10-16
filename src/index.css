@@ -24,3 +24,7 @@ code {
 .ant-card .ant-card-head {
   border-bottom: 5px solid #ecd692;
 }
+
+.ant-list-split .ant-list-item{
+  border-block-end: none;
+}
