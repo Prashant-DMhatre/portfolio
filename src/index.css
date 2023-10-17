@@ -25,6 +25,9 @@ code {
   border-bottom: 5px solid #ecd692;
 }
 
+.ant-card .ant-card-body{
+  padding: 5px 20px;
+}
 .ant-list-split .ant-list-item{
   border-block-end: none;
 }

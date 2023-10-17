@@ -14,6 +14,7 @@ import backendTechnologies from '../images/nodejs.png'
 import versionControl from '../images/git.png'
 import codetech from '../images/code-svgrepo-com.svg'
 import statemgmt from '../images/monitor-svgrepo-com.svg'
+import API from '../images/icons8-rest-api-48.png'
 
 const Portfolio = () => {
 
@@ -92,24 +93,28 @@ const Portfolio = () => {
   ]
 
   const skillsData = {
-      Frontend_Technologies:
+      frontend_technologies:
       { 
         img:codetech,
         tech:["React","Next.js","TypeScript","HTML","CSS","Tailwind CSS","Bootstrap","AntD"]
       },
-      State_Management:{
+      state_management:{
         img:statemgmt,
         tech:["Redux","Redux Saga"]
       },
-      Data_Visualization:{
+      api_implementation:{
+        img:API,
+        tech:["RESTful APIs","Postman"]
+      },
+      data_visualization:{
         img:dataVisualization,
         tech:["AmCharts"]
       },
-      Version_Control:{
+      version_control:{
         img:versionControl,
         tech:["Git"]
       },
-      Backend_Technologies:{
+      backend_technologies:{
         img:backendTechnologies,
         tech:["Node.js (Beginner)","MongoDB (Beginner)"]
       }
@@ -131,7 +136,7 @@ const Portfolio = () => {
 
   return ( 
     <>
-      <Card className='m-auto bg-slate-300 w-[70%]'>
+      <Card className='m-auto bg-slate-300 w-[60%]'>
         {/* <Space direction="vertical" className='w-[100%]'> */}
           <Card bordered={false} style={{boxShadow:'none'}}>
             <Row>

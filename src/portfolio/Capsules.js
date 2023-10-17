@@ -4,7 +4,7 @@ const Capsules = ({data}) => {
   return ( 
     <>
       {data ? data.map((key,index)=>(
-          <Tag>{key}</Tag>
+          <Tag className='text-[15px]'>{key}</Tag>
       )):
       <>
         loading....

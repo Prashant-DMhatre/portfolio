@@ -7,7 +7,7 @@ const Skills = ({data}) => {
         {Object.keys(data).map((key,index)=>(
           <>
             <div className='flex justify-left items-center pl-0'>
-              <img src={data[key].img} className='w-[15px] h-[15px] mr-2'/><span className='text-[15px] font-bold'>{key ? key.replaceAll('_', ' ') : ""}</span>
+              <img src={data[key].img} className='w-[15px] h-[15px] mr-2'/><span className='text-[15px] font-bold capitalize'>{key ? key.replaceAll('_', ' ') : ""}</span>
             </div>
             <Capsules data={data[key].tech}/>
           </>        
