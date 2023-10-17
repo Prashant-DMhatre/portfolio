@@ -143,10 +143,7 @@ const Portfolio = () => {
               <Col className='text-[20px]'>
                 Frontend Developer
               </Col>
-              <Col>
-                <Divider type="vertical" />
-              </Col>
-              <Col className='text-[20px]'>
+              <Col className='text-[20px] vertical-line'>
                 Transforming Designs into Interactive Web Apps
               </Col>
             </Row>
