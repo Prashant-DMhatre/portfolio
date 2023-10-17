@@ -192,7 +192,7 @@ const Portfolio = () => {
             <Card bordered={false} style={{boxShadow:'none'}} title={<div className='text-headerColor text-[30px] text-start'>SUMMARY</div>}>
               <Summary data={summaryData}/>
             </Card>
-            <Card bordered={false} style={{boxShadow:'none'}} title={<div className='text-headerColor text-[30px] text-start'>STRENGTHS</div>}>
+            <Card bordered={false} style={{boxShadow:'none', lineHeight:'30px'}} title={<div className='text-headerColor text-[30px] text-start'>STRENGTHS</div>}>
               <Capsules data={strengthData}/>
             </Card>
             <Card bordered={false} style={{boxShadow:'none'}} title={<div className='text-headerColor text-[30px] text-start'>SKILLS</div>}>
