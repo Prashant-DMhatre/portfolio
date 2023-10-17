@@ -158,18 +158,20 @@ const Portfolio = () => {
               </Col>
               <Col>  
                 <Typography.Text className='flex items-center'>
-                  <img src={phone} className='w-[15px] h-[15px] mr-1'/><span className='text-[15px]'>+91 9967-341881</span>
+                  <img src={phone} className='w-[15px] h-[15px] mr-1'/><a className='text-[15px]' href="tel:+919967341881">+91 9967-341881</a>
                 </Typography.Text>
               </Col>
               <Col>  
                 <Typography.Text className='flex items-center'>
-                  <img src={mail} className='w-[15px] h-[15px] mr-1'/><span className='text-[15px]'>Jindal Avenue, Navi Mumbai, 410206 India.</span>
+                  <img src={mail} className='w-[15px] h-[15px] mr-1'/><a target="_blank" href='https://www.google.com/maps/place/Jindal+Avenue/@18.9954507,73.1041296,15z/data=!4m6!3m5!1s0x3be7e91bb7baadc7:0x9f3d1cf0197d4ecb!8m2!3d18.9954507!4d73.1041296!16s%2Fg%2F11rcdc2g9q?entry=ttu' className='text-[15px]'>Jindal Avenue, Navi Mumbai, 410206 India.</a>
                 </Typography.Text>
               </Col>
             </Row>
-            <Row className='text-textColor'>
-              <Col className='flex justify-center items-center'>
-                <img src={linkdin} className='w-[15px] h-[15px] mr-1'/><a href='https://www.linkedin.com/in/prashantdmhatre' className='text-[15px]'>https://www.linkedin.com/in/prashantdmhatre</a>
+            <Row>
+              <Col>
+                <Typography.Text className='flex items-center'>
+                  <img src={linkdin} className='w-[15px] h-[15px] mr-1'/><a target="_blank" href='https://www.linkedin.com/in/prashantdmhatre' className='text-[15px]'>https://www.linkedin.com/in/prashantdmhatre</a>
+                </Typography.Text>
               </Col>
             </Row>
           </Card>
