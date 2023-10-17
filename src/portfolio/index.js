@@ -153,7 +153,7 @@ const Portfolio = () => {
             <Row className='text-textColor justify-between w-[80%]' >
               <Col>
                 <Typography.Text className='flex items-center'>
-                  <img src={email} className='w-[15px] h-[15px] mr-1'/><span className='text-[15px]'>prashantmhatre@outlook.in</span>
+                  <img src={email} className='w-[15px] h-[15px] mr-1'/><a className='text-[15px]'href="mailto:prashantmhatre@outlook.in">prashantmhatre@outlook.in</a>
                 </Typography.Text>
               </Col>
               <Col>  
